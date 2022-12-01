@@ -5,7 +5,6 @@ import Headings from "./Components/Headings/Headings";
 
 function App() {
 
-    //https://dev.deepthought.education/assets/uploads/files/others/project.json
     return <div>
         <Header/>
         <div className={"app"}>

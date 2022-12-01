@@ -1,57 +1,44 @@
-import React, {useState} from "react";
 import "./Sidebar.css";
-import {VscThreeBars} from "react-icons/vsc";
-import {Link} from "@mui/material";
-import {IconContext} from "react-icons";
+
+import {useState} from "react";
+import {GrMenu} from "react-icons/gr";
+import {motion} from "framer-motion";
+import {data} from "../Common/Data";
 
 export default function Sidebar() {
+    const [selected, setSelected] = useState(0)
+    const [open, setOpen] = useState(true)
 
-    const sidebarData = [
-        {
-            title: "Assignment1",
-
+    const sidebarVariants = {
+        true: {
+            left: '0'
         },
-        {
-            title: "Assignment1",
+        false: {
+            left: '-60%'
+        }
+    }
+    return <>
+        <div className={"bar-icon"} style={open ? {left: "25%", position: ""} : {left: "0"}}
+             onClick={() => setOpen(!open)}>
+            <GrMenu color={"white"}/>
+        </div>
 
-        },
-        {
-            title: "Assignment1",
-
-        },
-        {
-            title: "Assignment1",
-
-        },
+        <motion.div
+            variants={sidebarVariants}
+            animate={window.innerWidth <= 1968 ? `${open}` : ''}
+            className={"sidebar"}>
 
 
-    ]
-    const [sidebar, setSidebar] = useState(false);
+            <div className={"menu"}>
 
-    const showSidebar = () => setSidebar(!sidebar)
-    return <div className={"sidebar"}>
-        <IconContext.Provider value={{color: "black"}}>
-            <div className={"navbar"}>
-                <div  className={"menu-bars"}>
-                    <VscThreeBars style={{margin: "5px"}} size={18} onClick={showSidebar}/>
+
+                <div>
+                    <li className={"menu-item"}>{data.tasks[0].assets.asset_title}</li>
+
                 </div>
+
+
             </div>
-
-            <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-                <Link to={"#"} className={"menu-bars"}>
-                    <VscThreeBars  size={18} onClick={showSidebar}/>
-                </Link>
-                <ul className={"nav-menu-items"} onClick={showSidebar}>
-                    {
-                        sidebarData.map((value, index) => {
-                            return <li key={index} className={"nav-text"}>
-                                {value.title}
-                            </li>
-                        })
-                    }
-                </ul>
-            </nav>
-        </IconContext.Provider>
-
-    </div>
+        </motion.div>
+    </>
 }

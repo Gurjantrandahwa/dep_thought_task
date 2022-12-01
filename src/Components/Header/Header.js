@@ -31,7 +31,10 @@ export default function Header() {
                 })
 
             }
-            <Avatar sx={{width:"40px",height:"40px",marginLeft:"20px",marginRight:"20px"}} />
+            <Avatar sx={{width:"40px",height:"40px",marginLeft:"20px",marginRight:"20px",color:"#3683F0",backgroundColor:"white",fontWeight:"700"}}
+                    src={"https://deepthought.education/assets/images/logo/logo.sv"}
+
+                    alt={"DT"}/>
             <TbDotsVertical color={"#3683F0"}/>
         </div>
     </div>

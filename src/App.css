@@ -1,6 +1,4 @@
 .app {
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 11rem auto;
+    display: flex;
     gap: 15px;
 }
