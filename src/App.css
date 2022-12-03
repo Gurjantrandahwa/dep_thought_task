@@ -1,4 +1,6 @@
 .app {
     display: flex;
-    gap: 15px;
+    gap: 35px;
+    margin-top: 150px;
+    grid-template-columns: 11rem auto
 }
