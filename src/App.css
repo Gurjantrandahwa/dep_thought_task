@@ -4,3 +4,9 @@
     margin-top: 150px;
     grid-template-columns: 11rem auto
 }
+
+.down-arrow {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}

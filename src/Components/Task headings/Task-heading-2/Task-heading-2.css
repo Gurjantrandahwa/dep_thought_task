@@ -1,8 +1,9 @@
 .task-heading-2 {
-    width: 448px;
+    max-width: 448px;
     height: fit-content;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border: 2px solid #F0F0F0;
+    border-radius: 20px;
 }
 
 .thread-A {
@@ -42,6 +43,7 @@
     background-color: #F0F0F0;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 200px;
 }
 
 .input-container input {
@@ -49,14 +51,70 @@
     margin-top: 10px;
     border: none;
     outline: none;
-    padding: 10px 10px 70px 10px;
+    padding: 10px 10px 50px 10px;
     font-family: "Lucida Console", "Courier New", monospace;
     width: 100%;
 
 }
-.select-options{
+
+.select-options {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.select-options svg {
+    margin-left: 5px;
+    color: #595757;
 
 }
-.box-wrapper{
 
+.box-wrapper {
+    display: flex;
+    padding-left: 20px;
+}
+
+.select-options button svg {
+    color: white;
+}
+
+.summary {
+    background-color: #F0F0F0;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.summary p {
+    padding: 10px;
+    display: flex;
+
+}
+
+.summary input {
+    width: 100%;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    padding: 10px 10px 50px 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-radius: 20px;
+}
+
+.thread-credit-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.thread-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.border {
+    border-top: 2px solid #F0F0F0;
+    margin-top: 10px;
 }
