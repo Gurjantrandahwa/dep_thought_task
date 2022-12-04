@@ -1,0 +1,24 @@
+.task-heading-1 {
+    width: 460px;
+    height: fit-content;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #F0F0F0;
+
+}
+
+.task-heading-1-description {
+    padding: 20px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.down-arrow {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.task-heading-1 svg {
+    margin: 5px 10px;
+    cursor: pointer;
+}

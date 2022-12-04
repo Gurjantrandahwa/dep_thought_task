@@ -1,0 +1,62 @@
+.task-heading-2 {
+    width: 448px;
+    height: fit-content;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #F0F0F0;
+}
+
+.thread-A {
+    display: flex;
+    align-items: center;
+    background-color: #f4f0e7;
+    margin-top: 35px;
+    padding: 10px;
+    border-top: 2px solid #f0e9db;
+    border-bottom: 1px solid #e5d9be;
+}
+
+.thread-A p {
+    text-transform: capitalize;
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.thread-A svg {
+    margin-left: 20px;
+}
+
+.input-container {
+    display: flex;
+    padding: 30px 20px;
+    gap: 30px;
+
+}
+
+.input-container label {
+    margin: 10px;
+
+}
+
+.input-container div {
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-container input {
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 10px 10px 70px 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 100%;
+
+}
+.select-options{
+
+}
+.box-wrapper{
+
+}
